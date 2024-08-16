@@ -22,6 +22,7 @@
     "react": "18.0.0",
     "react-native": "0.69.2",
     "react-native-axios": "^0.17.1",
+    "react-native-element-dropdown": "^2.12.1",
     "react-native-flatlist-slider": "^1.0.6",
     "react-native-gesture-handler": "^2.16.0",
     "react-native-image-slider-box": "^2.0.7",

@@ -12,6 +12,7 @@ import { useColorScheme } from 'react-native'
 import MainScreen from './src/MainScreen';
 import ProductDetails from './src/ProductDetails';
 import SplashScreen from './src/SplashScreen';
+import ExhibitorList from './src/ExhibitorList';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -64,7 +65,7 @@ const Router = () => {
           )
         }} />
       </Tab.Navigator> */}
-      <Stack.Navigator initialRouteName='MainScreen'>
+      <Stack.Navigator initialRouteName='ExhibitorList'>
         <Stack.Screen name='MainScreen' component={MainScreen} options={{
           title: 'Product List',
           headerTitle: null,
@@ -74,6 +75,7 @@ const Router = () => {
         }} />
         <Stack.Screen name='ProductDetails' component={ProductDetails} options={{ title: 'Product Details', headerBackVisible: true, }} />
         <Stack.Screen name='SplashScreen' component={SplashScreen} options={{ headerShown: false }} />
+        <Stack.Screen name='ExhibitorList' component={ExhibitorList} options={{ headerShown: false }} />
 
       </Stack.Navigator>
 
